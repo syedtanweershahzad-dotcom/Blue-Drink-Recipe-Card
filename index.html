@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blue Drink Recipe Card</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,700;1,400&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="recipe-card">
+    
+    <header class="recipe-header">
+      <div class="image-container">
+        <img src="image/Blue-Beverages-Foxes-Love-Lemons-660x439.jpg" alt="Blue Alcohol Drink">
+      </div>
+      <h1 class="recipe-title">Blue  Drink</h1>
+      
+      <div class="recipe-meta">
+        <span><i class="fa-solid fa-user"></i> AUTHOR: SYED TANWEER</span>
+        <span><i class="fa-solid fa-utensils"></i> YIELD: 2 SERVING</span>
+        <span><i class="fa-solid fa-clock"></i> PREP: 5 MINUTES</span>
+        <span><i class="fa-solid fa-clock"></i> TOTAL: 5 MINUTES</span>
+      </div>
+      
+      <p class="recipe-description">
+        Want to serve Blue Drinks for a themed party? These super easy blue cocktail drinks have a vibrant color and are so refreshing.
+      </p>
+      
+      <div class="rating-container">
+        <div class="stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <span class="rating-text">5 from 1 rating</span>
+      </div>
+      
+      <div class="action-buttons">
+        <button class="btn btn-orange">PRINT RECIPE <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+        <button class="btn btn-orange">PIN RECIPE <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+        <button class="btn btn-orange">LEAVE A REVIEW</button>
+      </div>
+    </header>
+
+    <section class="save-recipe-box">
+      <h2>Save This Recipe!</h2>
+      <p>Enter your email and we'll send this recipe to your inbox.</p>
+      <form class="save-form" onsubmit="event.preventDefault();">
+        <div class="form-inputs">
+          <input type="text" placeholder="First Name" required>
+          <input type="email" placeholder="Email Address" required>
+        </div>
+        <button type="submit" class="btn-submit">SEND ME THIS RECIPE</button>
+        <label class="checkbox-label">
+          <input type="checkbox" required> <span>I agree to getting emails from you.</span>
+        </label>
+      </form>
+    </section>
+
+    <section class="recipe-ingredients">
+      <h2 class="section-title">Ingredients</h2>
+      <ul class="ingredients-list">
+        <li>
+          <input type="checkbox" id="ing1">
+          <label for="ing1">Ice</label>
+        </li>
+        <li>
+          <input type="checkbox" id="ing2">
+          <label for="ing2"><strong>1 ounce</strong> blue curaçao</label>
+        </li>
+        <li>
+          <input type="checkbox" id="ing3">
+          <label for="ing3"><strong>2 ounces</strong> vodka</label>
+        </li>
+        <li>
+          <input type="checkbox" id="ing4">
+          <label for="ing4"><strong>1 ounce</strong> orange juice</label>
+        </li>
+        <li>
+          <input type="checkbox" id="ing5">
+          <label for="ing5"><strong>4 ounces</strong> lemon lime soda</label>
+        </li>
+        <li>
+          <input type="checkbox" id="ing6">
+          <label for="ing6">Orange peel and maraschino cherries <span class="optional">for garnish (optional)</span></label>
+        </li>
+      </ul>
+    </section>
+
+    <section class="recipe-instructions">
+      <h2 class="section-title">Instructions</h2>
+      <ol class="instructions-list">
+        <li>
+          <div class="step-number">1</div>
+          <p>Fill cocktail shaker or beaker with ice. Add blue curaçao, vodka, orange juice and soda and stir well.</p>
+        </li>
+        <li>
+          <div class="step-number">2</div>
+          <p>Filled two double old fashioned glasses with fresh ice and strain drink over ice. Serve immediately.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="nutrition-box">
+      <h3>NUTRITION INFORMATION:</h3>
+      <p class="nutrition-data">
+        <span>Calories: <strong>131kcal</strong>,</span>
+        <span>Carbohydrates: <strong>11g</strong>,</span>
+        <span>Protein: <strong>0.2g</strong>,</span>
+        <span>Fat: <strong>0.03g</strong>,</span>
+        <span>Saturated Fat: <strong>0.01g</strong>,</span>
+        <span>Polyunsaturated Fat: <strong>0.01g</strong>,</span>
+        <span>Monounsaturated Fat: <strong>0.01g</strong>,</span>
+        <span>Sodium: <strong>6mg</strong>,</span>
+        <span>Potassium: <strong>29mg</strong>,</span>
+        <span>Fiber: <strong>0.03g</strong>,</span>
+        <span>Sugar: <strong>9g</strong>,</span>
+        <span>Vitamin A: <strong>28IU</strong>,</span>
+        <span>Vitamin C: <strong>7mg</strong>,</span>
+        <span>Calcium: <strong>3mg</strong>,</span>
+        <span>Iron: <strong>0.04mg</strong></span>
+      </p>
+      <p class="nutrition-disclaimer">
+        <em>This website provides estimated nutrition information as a courtesy only. You should calculate the nutritional information with the actual ingredients used in your recipe using your preferred nutrition calculator.</em>
+      </p>
+    </section>
+
+    <footer class="social-share-box">
+      <div class="social-icon">
+        <i class="fa-brands fa-instagram"></i>
+      </div>
+      <div class="social-content">
+        <h3>Did you make this recipe?</h3>
+        <p>
+          <a href="#" class="underline-link">Leave a Review</a> below or share a photo and tag me on Instagram 
+          <a href="#" class="underline-link bold-link">@tanweerlovelemons</a> 
+          <i class="fa-solid fa-arrow-up-right-from-square small-icon"></i> with the hashtag 
+          <a href="#" class="underline-link bold-link">#tanweerlovelemons</a> 
+          <i class="fa-solid fa-arrow-up-right-from-square small-icon"></i>.
+        </p>
+      </div>
+    </footer>
+
+  </div>
+
+</body>
+</html>

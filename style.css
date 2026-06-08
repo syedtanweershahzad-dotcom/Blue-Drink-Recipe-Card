@@ -1,0 +1,338 @@
+/* --- Global Resets & Theme Variables --- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f4f6f8; /* Soothing light gray background */
+  color: #333333; /* Readable dark charcoal text */
+  display: flex;
+  justify-content: center;
+  padding: 60px 20px;
+}
+
+/* --- Main Layout Wrapper --- */
+.recipe-card {
+  background-color: #ffffff; /* Beech ka body section white rahega premium look ke liye */
+  max-width: 650px;
+  width: 100%;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08); /* Soft professional shadow */
+  border-radius: 8px; /* Clean slightly rounded corners */
+  overflow: visible; 
+  margin-top: 80px; 
+}
+
+/* --- Header Block (Teal Accent) --- */
+.recipe-header {
+  background-color: #49beba; /* Instagram wala beautiful color sirf header aur footer par */
+  text-align: center;
+  padding: 90px 30px 35px;
+  position: relative;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.image-container {
+  width: 160px;
+  height: 160px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid #ffffff;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.recipe-title {
+  font-family: 'Lora', serif;
+  font-size: 2.2rem;
+  color: #ffffff; /* White text looks gorgeous on teal header */
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.recipe-meta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 18px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #e3f5f6; /* Soft light blue tint */
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+}
+
+.recipe-meta span i {
+  color: #ebd926; /* Vibrant yellow icons for high contrast */
+  margin-right: 4px;
+}
+
+.recipe-description {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #ffffff;
+  margin-bottom: 25px;
+  padding: 0 10px;
+}
+
+.rating-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 25px;
+}
+
+.stars {
+  color: #ebd926;
+  font-size: 1rem;
+}
+
+.rating-text {
+  font-size: 0.85rem;
+  font-style: italic;
+  color: #e3f5f6;
+}
+
+/* --- Buttons (Orange pop-out contrast) --- */
+.action-buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 15px;
+}
+
+.btn {
+  border: none;
+  padding: 14px 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 0.5px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: all 0.2s ease;
+}
+
+.btn-orange {
+  background-color: #e96b3a; /* High contrast orange button */
+  color: #ffffff;
+}
+
+.btn-orange:hover {
+  background-color: #d15627;
+  transform: translateY(-1px);
+}
+
+/* --- Save Recipe Box (Light Pastel Box) --- */
+.save-recipe-box {
+  background-color: #f2fafa; /* Very light subtle teal background */
+  margin: 35px 30px;
+  padding: 30px 25px;
+  text-align: center;
+  border-radius: 6px;
+  border: 1px dashed #49beba; /* Beautiful dashed boundary */
+}
+
+.save-recipe-box h2 {
+  font-family: 'Lora', serif;
+  color: #2c3e50;
+  font-size: 1.6rem;
+  margin-bottom: 8px;
+}
+
+.save-recipe-box p {
+  font-size: 0.9rem;
+  color: #556970;
+  margin-bottom: 20px;
+}
+
+.form-inputs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.form-inputs input {
+  flex: 1;
+  padding: 12px 15px;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.85rem;
+}
+
+.btn-submit {
+  width: 100%;
+  background-color: #49beba;
+  color: #ffffff;
+  border: none;
+  padding: 14px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.btn-submit:hover {
+  background-color: #3ba3a0;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 0.8rem;
+  color: #556970;
+  margin-top: 10px;
+}
+
+/* --- Ingredients & Instructions (Super Clean Text) --- */
+.recipe-ingredients, .recipe-instructions {
+  padding: 0 35px;
+  margin-bottom: 40px;
+}
+
+.section-title {
+  font-family: 'Lora', serif;
+  font-size: 1.6rem;
+  color: #2e3b4e;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 8px;
+  margin-bottom: 22px;
+}
+
+.ingredients-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 16px;
+  font-size: 0.98rem;
+  color: #444444;
+}
+
+.ingredients-list input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  margin-top: 2px;
+  cursor: pointer;
+  accent-color: #49beba;
+}
+
+.instructions-list li {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+  align-items: flex-start;
+}
+
+.step-number {
+  background-color: #ebd926; /* Yellow badge pops beautifully on white */
+  color: #222222;
+  font-weight: 700;
+  font-size: 0.9rem;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.instructions-list p {
+  font-size: 0.98rem;
+  line-height: 1.6;
+  color: #444444;
+}
+
+/* --- Nutrition Box --- */
+.nutrition-box {
+  background-color: #f7f9fa; /* Elegant soft gray box */
+  margin: 35px 30px;
+  padding: 25px;
+  font-size: 0.85rem;
+  line-height: 1.8;
+  border-left: 4px solid #e96b3a; /* Left orange dynamic strip */
+}
+
+.nutrition-box h3 {
+  font-weight: 700;
+  color: #2e3b4e;
+  display: inline;
+  margin-right: 5px;
+}
+
+.nutrition-disclaimer {
+  margin-top: 15px;
+  color: #7a8b94;
+  font-size: 0.78rem;
+  line-height: 1.5;
+}
+
+/* --- Social Share Footer (Teal Section) --- */
+.social-share-box {
+  background-color: #49beba; /* Matching header color to close layout */
+  color: #ffffff;
+  padding: 35px 30px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.social-icon i {
+  font-size: 4rem;
+}
+
+.social-content h3 {
+  font-family: 'Lora', serif;
+  font-size: 1.5rem;
+  margin-bottom: 6px;
+}
+
+.social-content p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #e3f5f6;
+}
+
+.underline-link {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.bold-link {
+  font-weight: 700;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 500px) {
+  .form-inputs {
+    flex-direction: column;
+  }
+  .social-share-box {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+}
